@@ -1,0 +1,93 @@
+.t-dropdown-style {
+  --btn-label__background-color: #e1e1e1;
+  --btn-label__border-width: 0.1em;
+  --btn-label__border-style: solid;
+  --btn-label__border-color: black;
+  --btn-label__padding: 0.5em;
+  --btn-label__cursor: pointer;
+
+  --t-dropdown-content__background-color: whitesmoke;
+  --t-dropdown-content__padding: 1em;
+  --t-dropdown-content__border-style: solid;
+  --t-dropdown-content__border-width: 0.1em;
+  --t-dropdown-content__border-color: black;
+  --t-dropdown-content__overflow-y: auto;
+  --t-dropdown-content__overflow-x: hidden;
+}
+
+.t-dropdown-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.t-dropdown-container {
+  position: relative;
+}
+
+.t-dropdown-container .t-dropdown-input-rd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  pointer-events: none;
+  touch-action: none;
+  opacity: 0;
+}
+
+.t-dropdown-container .t-dropdown-btn-label {
+  position: relative;
+  display: block;
+  background-color: var(--btn-label__background-color);
+  border-width: var(--btn-label__border-width);
+  border-style: var(--btn-label__border-style);
+  border-color: var(--btn-label__border-color);
+  padding: var(--btn-label__padding);
+  cursor: var(--btn-label__cursor);
+}
+
+.t-dropdown-container .t-dropdown-btn-label * {
+  user-select: none;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.t-dropdown-container .t-dropdown-btn-off {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.t-dropdown-container .t-dropdown-content {
+  display: none;
+  grid-auto-flow: row;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--t-dropdown-content__background-color);
+  padding: var(--t-dropdown-content__padding);
+  border-style: var(--t-dropdown-content__border-style);
+  border-width: var(--t-dropdown-content__border-width);
+  border-color: var(--t-dropdown-content__border-color);
+  overflow-y: var(--t-dropdown-content__overflow-y);
+  overflow-x: var(--t-dropdown-content__overflow-x);
+}
+
+.t-dropdown-container .t-dropdown-input-rd:checked ~ .t-dropdown-content {
+  display: grid;
+}
+.t-dropdown-container .t-dropdown-input-rd:checked ~ .t-dropdown-btn-off {
+  display: block;
+}
+
+.t-dropdown-container .t-dropdown-input-rd:checked ~ .t-dropdown-btn-label {
+  visibility: hidden;
+}
+
+.t-dropdown-container .t-dropdown-content.right {
+  right: 0;
+}
+
+.t-dropdown-container .t-dropdown-content.left {
+  left: 0;
+}

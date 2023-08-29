@@ -1,0 +1,159 @@
+* {
+  /* outline: 1px solid rgba(255, 0, 0, 0.3); */
+}
+
+html {
+  background-color: #9c9c9c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: scroll;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+a {
+  color: black;
+}
+
+.custom-text-icon {
+  aspect-ratio: 1/1;
+  width: 1em;
+  text-align: center;
+}
+
+.img-github-icon {
+  object-fit: contain;
+  width: 5em;
+  justify-self: center;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.4em;
+}
+
+.t-dropdown-custom-style .t-dropdown-content {
+  max-height: 10em;
+  gap: 1em;
+}
+
+.t-dropdown-custom-style .t-dropdown-content pre {
+  background-color: gray;
+}
+
+.t-dropdown-custom-style .t-dropdown-content p {
+  font-weight: bold;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  justify-self: center;
+  padding: 1em;
+  border-radius: 10em;
+}
+
+.t-dropdown-custom-style .t-dropdown-content button {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.t-dropdown-custom-style .t-dropdown-content a {
+  position: relative;
+  margin-left: 1.1ch;
+}
+.t-dropdown-custom-style .t-dropdown-content a::before {
+  position: absolute;
+  left: -1.1ch;
+  content: ">";
+  word-break: break-all;
+}
+
+.t-dropdown-custom-style-01 .t-dropdown-btn-label {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.t-dropdown-custom-style-01 .t-dropdown-content {
+  padding: .5rem 0;
+  margin-top: 0.1em;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+.t-dropdown-custom-style-02 .t-dropdown-btn-label {
+  border-radius: 6px;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  color: #fff;
+}
+
+.t-dropdown-custom-style-02 .t-dropdown-content {
+  margin-top: 0.5em;
+  border-radius: 6px;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  color: #fff;
+}
+
+.t-dropdown-custom-style-02 .t-dropdown-content a {
+  color: #fff;
+}
+
+.t-dropdown-custom-style-03 .t-dropdown-btn-label {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat, #004dff;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0 var(--c), calc(var(--_i,-1)*-0.08em) .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.t-dropdown-custom-style-03 .t-dropdown-btn-label:hover {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.t-dropdown-custom-style-03 .t-dropdown-content {
+  margin-top: 1em;
+
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat, #004dff;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0 var(--c), calc(var(--_i,-1)*-0.08em) .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.t-dropdown-custom-style-03 .t-dropdown-content a {
+  color: #fff;
+}
+
+.t-dropdown-custom-style-03 .t-dropdown-content:hover {
+  --_p: 0%;
+  --_i: 1;
+}
